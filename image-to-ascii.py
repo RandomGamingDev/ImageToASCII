@@ -8,6 +8,7 @@ img = Image.open(str(input("Enter the name of the image that you would like to c
     int(input("Enter the y resolution of the image: ")),
     int(input("Enter the x resolution of the image: "))
 ), resample=Image.Resampling.BILINEAR)
+img = img.rotate(90)
 
 for x in range(img.size[0]):
     for y in range(img.size[1]):
