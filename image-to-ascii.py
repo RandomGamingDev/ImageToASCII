@@ -5,8 +5,8 @@ with open("chars.txt") as file:
     chars = [char.rstrip() for char in file.readlines()]
 
 img = Image.open(str(input("Enter the name of the image that you would like to conver to ASCII: "))).resize((
-    int(input("Enter the x resolution of the image: ")),
-    int(input("Enter the y resolution of the image: "))
+    int(input("Enter the y resolution of the image: ")),
+    int(input("Enter the x resolution of the image: "))
 ), resample=Image.Resampling.BILINEAR)
 
 for x in range(img.size[0]):
